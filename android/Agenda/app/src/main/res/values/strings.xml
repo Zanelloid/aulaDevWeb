@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Agenda2019</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="estados">
+        <item>Selecione</item>
+        <item>RS</item>
+        <item>SC</item>
+        <item>PR</item>
+    </string-array>
+
 </resources>
