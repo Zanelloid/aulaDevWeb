@@ -2,11 +2,20 @@
 <html lang="en" dir="ltf">
   <head>
     <style>
+        p {
+          color:indigo;
+        }
+        p#um{
+          text-decoration: underline;
+          text-decoration-color: aqua;
+        }
+        p.a{
+          text-shadow: 2px 2px 2px #22ff22;
+        }
         .horizontal{
           display: flex;
           flex-direction: row;
           background-color: red;
-          justify-content: space-between;
         }
         ul {
           list-style-type: none;
@@ -25,6 +34,16 @@
 
     <p>paragrafo <i>paragrafo em italico</i> <u>paragrafo sublinhado</u>
     <b>paragrafo negrito</b></p>
+
+    <p id= "um">paragrafo <i>paragrafo em italico</i> <u>paragrafo sublinhado</u>
+    <b>paragrafo negrito</b></p>
+
+    <p class="a">paragrafo <i>paragrafo em italico</i> <u>paragrafo sublinhado</u>
+    <b>paragrafo negrito</b></p>
+
+    <p>paragrafo <i>paragrafo em italico</i> <u>paragrafo sublinhado</u>
+    <b>paragrafo negrito</b></p>
+
     <div class="horizontal">
       <ul>
         <li>Zanella</li>
