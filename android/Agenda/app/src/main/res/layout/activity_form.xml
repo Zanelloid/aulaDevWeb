@@ -21,37 +21,37 @@
             android:layout_height="500dp">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editText_nome"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:hint="Nome:"
+                android:hint="@string/nome"
                 android:textColor="#000"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                app:layout_constraintTop_toBottomOf="@+id/image_foto_perfil" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/editText_telefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:hint="Telefone:"
+                android:hint="@string/telefone"
                 android:textColor="#000"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/editText_nome" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/image_foto_perfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -62,14 +62,14 @@
                 tools:srcCompat="@tools:sample/avatars" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/image_camera_button"
                 android:layout_width="117dp"
                 android:layout_height="73dp"
                 android:layout_marginStart="8dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintBottom_toBottomOf="@+id/image_foto_perfil"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView3"
-                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/image_foto_perfil"
+                app:layout_constraintTop_toTopOf="@+id/image_foto_perfil"
                 app:srcCompat="@android:drawable/ic_menu_camera" />
 
             <TextView
@@ -78,15 +78,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Estado"
+                android:text="@string/estado"
                 android:textColor="#000"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                app:layout_constraintTop_toBottomOf="@+id/editText_telefone" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spinner_estado"
                 android:layout_width="395dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -98,7 +98,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/spinner_cidade"
                 android:layout_width="395dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -106,7 +106,7 @@
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+                app:layout_constraintTop_toBottomOf="@+id/spinner_estado" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -114,15 +114,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Sexo:"
+                android:text="@string/sexo_title"
                 android:textAllCaps="true"
                 android:textColor="#000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+                app:layout_constraintTop_toBottomOf="@+id/spinner_cidade" />
 
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/radioGroup_genero"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -131,45 +131,48 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView2">
 
                 <RadioButton
+                    android:id="@+id/radio_feminino"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Feminino" />
+                    android:text="@string/sexo_feminino" />
 
                 <RadioButton
+                    android:id="@+id/radio_masculino"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Masculino" />
+                    android:text="@string/sexo_masculino" />
 
                 <RadioButton
+                    android:id="@+id/radio_nao_binario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Não binário" />
+                    android:text="@string/sexo_nao_binario" />
 
             </RadioGroup>
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBox_estado_civil"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Casado"
+                android:text="@string/estado_civil"
                 android:textColor="#000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_genero" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_salvar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:text="Salvar"
+                android:text="@string/salvar"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_estado_civil" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

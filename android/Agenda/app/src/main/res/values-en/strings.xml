@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda2019</string>
+    <string name="sexo_nao_binario">Não binário</string>
+    <string name="sexo_masculino">Masculino</string>
+    <string name="estado_civil">Casado</string>
+    <string name="sexo_feminino">Feminino</string>
+    <string name="sexo_title">Sexo:</string>
+    <string name="salvar" >Salvar</string>
+    <string name="estado" >Estado</string>
+    <string name="telefone" >Telefone:</string>
+    <string name="nome" >Nome:</string>
+
+    <string-array name="estados">
+        <item>Selecione</item>
+        <item>RS</item>
+        <item>SC</item>
+        <item>PR</item>
+    </string-array>
+
+    <string-array name="cidades_Rs">
+        <item>Selecione</item>
+        <item>Alvorada</item>
+        <item>Porto Alegre</item>
+        <item>Travesseiro</item>
+    </string-array>
+    <string-array name="cidades_Sc">
+        <item>Selecione</item>
+        <item>Joinville</item>
+        <item>Blumenau</item>
+        <item>Florianopolis</item>
+    </string-array>
+</resources>
